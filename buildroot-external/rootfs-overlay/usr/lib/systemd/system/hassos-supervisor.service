@@ -18,4 +18,4 @@ ExecStart=/usr/sbin/hassos-supervisor
 ExecStop=-/usr/bin/docker stop hassio_supervisor
 
 [Install]
-WantedBy=multi-user.target
+# WantedBy=multi-user.target      # Comment this line to prevent HassOS from starting the supervisor service by default
